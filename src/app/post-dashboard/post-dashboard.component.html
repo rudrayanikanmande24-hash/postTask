@@ -1,0 +1,23 @@
+
+<div class="row">
+    <div class="col-12">
+        <h2 class="d-flex justify-content-center align-items-center mb-5">
+            Add Post
+            <button 
+            (click)="onMatOpen()"
+            mat-mini-fab color="accent" aria-label="Example icon button with a delete icon">
+          <mat-icon>add</mat-icon>
+        </button>
+        </h2>
+
+      
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <app-post-card
+        [postObj]="post"
+         *ngFor="let post of postsArr"></app-post-card>
+    </div>
+</div>
